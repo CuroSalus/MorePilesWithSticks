@@ -1,8 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
-		<TargetFramework>net7</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
         <LangVersion>11</LangVersion>
 	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="CakeBuild\**" />
+	  <Compile Remove="MorePilesWithSticks\**" />
+	  <EmbeddedResource Remove="CakeBuild\**" />
+	  <EmbeddedResource Remove="MorePilesWithSticks\**" />
+	  <None Remove="CakeBuild\**" />
+	  <None Remove="MorePilesWithSticks\**" />
+	</ItemGroup>
 	
   <ItemGroup>
         <Reference Include="Vintagestory">
